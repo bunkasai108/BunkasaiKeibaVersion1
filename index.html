@@ -62,7 +62,7 @@ button.addEventListener('click', () => {
 });
 
 function playRandomMainVideo() {
-  const index = Math.floor(Math.random() * mainVideos.length);
+  const index = Math.random() * 10;
   video.src = mainVideos[index];
   video.loop = false;
   video.muted = false; // スタート操作なので音声ON
@@ -92,4 +92,5 @@ function handleEnded() {
 </script>
 
 </body>
+
 </html>
